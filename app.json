@@ -1,0 +1,10 @@
+{
+  "name": "Node Express Mongo",
+  "description": "A barebones Node.js app using Express 4 with MongoDB",
+  "repository": "https://github.com/maxmax/nodeback",
+  "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
+  "keywords": ["node", "express", "static", "mongodb"],
+  "addons" : [
+  	"mongolab"
+  ]
+}
