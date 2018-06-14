@@ -8,6 +8,7 @@ var http = require('http'),
     passport = require('passport'),
     errorhandler = require('errorhandler'),
     mongoose = require('mongoose');
+    // multer = require('multer');
 
 var isProduction = process.env.NODE_ENV === 'production';
 
@@ -23,6 +24,8 @@ app.use(bodyParser.json());
 
 app.use(require('method-override')());
 app.use(express.static(__dirname + '/public'));
+// multer uploader
+// app.use(multer({ dest: __dirname +'/public/upload/'}).any());
 
 app.use(session({ secret: 'conduit', cookie: { maxAge: 60000 }, resave: false, saveUninitialized: false  }));
 
@@ -41,6 +44,8 @@ require('./models/User');
 require('./config/passport');
 
 app.use(require('./routes'));
+
+/////////
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
