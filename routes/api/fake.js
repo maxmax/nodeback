@@ -25,7 +25,7 @@ router.get('/test', function(req, res) {
 });
 
 router.get('/cool', function(req, res) {
-  res.send(cool());
+  res.json(cool());
 });
 
 router.get('/times', function(req, res) {
