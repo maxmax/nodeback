@@ -23,7 +23,7 @@
     "ejs": "2.5.5",
     "errorhandler": "1.4.3",
     "express": "4.13.4",
-    "express-fileupload": "^0.4.0",
+    "express-fileupload": "^1.1.9",
     "express-jwt": "3.3.0",
     "express-session": "1.13.0",
     "jsonwebtoken": "7.1.9",
